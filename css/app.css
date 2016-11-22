@@ -30,11 +30,12 @@ html, body {
 
 @media screen and (orientation:portrait) {
     .topbar {
-        height:75px;
+        height:100px;
         background: rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
     }
 
-    .leftbar {
+/*    .leftbar {
         height: 100%;
         width: 75px;
         top: 0;
@@ -54,7 +55,7 @@ html, body {
         margin-bottom: 50px;
         transition: 0.5s;
         background: rgba(0, 0, 0, 0.5);
-    }
+    }*/
 
     .bottombar {
         width: 100%;
@@ -63,11 +64,23 @@ html, body {
         z-index: 1;
         bottom: 0;
         right: 0;
+        left:0;
         overflow-x: hidden;
-        margin-left: 50px;
-        margin-right: 50px;
+        /*margin-left: 50px;*/
+        /*margin-right: 50px;*/
         transition: 0.5s;
         background: rgba(0, 0, 0, 0.5);
+    }
+
+    #content{
+        position: fixed;
+        /*margin-left: 50px;*/
+        /* background-color: white; */
+        height: 100%;
+        width: 100%;
+        /* margin-top: 50px; */
+        padding: 10px 10px 210px 10px;
+        transition: 0.5s;
     }
 
     #menubar{
@@ -85,21 +98,23 @@ html, body {
 @media screen and (orientation:landscape) {
     /* Landscape styles here */
     .topbar {
+        height: 50px;
         /*margin: 0 -9999rem;*/
         /* add back negative margin value */
         /*padding: 0.25rem 9999rem;*/
         background: rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
     }
 
-    .leftbar {
+/*    .leftbar {
         height: 100%;
-        /* position: fixed; */
-        /* z-index: 1; */
+        /!* position: fixed; *!/
+        /!* z-index: 1; *!/
         top: 0;
         left: 0;
-        /* background-color: #111; */
+        /!* background-color: #111; *!/
         overflow-x: hidden;
-        /*padding-top: 60px;*/
+        /!*padding-top: 60px;*!/
         transition: 0.5s;
         background: rgba(0, 0, 0, 0.5);
     }
@@ -107,16 +122,16 @@ html, body {
     .rightbar {
         height: 100%;
         position: fixed;
-        /* z-index: 1; */
+        /!* z-index: 1; *!/
         top: 0;
         right: 0;
-        /* background-color: #111; */
-        /* overflow-y: hidden; */
+        /!* background-color: #111; *!/
+        /!* overflow-y: hidden; *!/
         margin-top: 50px;
         margin-bottom: 50px;
         transition: 0.5s;
         background: rgba(0, 0, 0, 0.5);
-    }
+    }*/
 
     .bottombar {
         width: 100%;
@@ -124,21 +139,25 @@ html, body {
         position: inherit;
         z-index: 1;
         bottom: 0;
-        /* left: 0; */
+         left: 0;
         right: 0;
         /* background-color: #111; */
         overflow-x: hidden;
-        margin-left: 50px;
-        margin-right: 50px;
+        /*margin-left: 50px;*/
+        /*margin-right: 50px;*/
         transition: 0.5s;
         background: rgba(0, 0, 0, 0.5);
     }
 
-    .topbar, .bottombar{
-        height: 50px;
-    }
-    .leftbar, .rightbar{
-        width: 50px;
+    #content{
+        position: fixed;
+        /*margin-left: 50px;*/
+        /* background-color: white; */
+        height: 100%;
+        width: 100%;
+        /* margin-top: 50px; */
+        transition: 0.5s;
+        padding: 10px 10px 110px 10px;
     }
 
     #menubar{
@@ -152,24 +171,14 @@ html, body {
     }
 }
 
-@media screen and (max-width: 768px)
-{
-    .topbar, .rightbar, .leftbar{
+
+    .leftbar, .rightbar {
         display: none !important;
     }
-}
 
 
 
-#content{
-    position: fixed;
-    margin-left: 50px;
-    /* background-color: white; */
-    height: 100%;
-    width: 100%;
-    /* margin-top: 50px; */
-    padding: 10px 110px 110px 10px;
-}
+
 
 #innerContent{
     background-color: white;
