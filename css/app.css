@@ -29,13 +29,13 @@ html, body {
 
 
 @media screen and (orientation:portrait) {
-    .topbar {
-        height:100px;
+    #topbar {
+        height:78px;
         background: rgba(0, 0, 0, 0.5);
         transition: 0.5s;
     }
 
-/*    .leftbar {
+ /*   .leftbar {
         height: 100%;
         width: 75px;
         top: 0;
@@ -43,21 +43,21 @@ html, body {
         overflow-x: hidden;
         transition: 0.5s;
         background: rgba(0, 0, 0, 0.5);
-    }
+    }*/
 
-    .rightbar {
+    #rightbar {
         height: 100%;
-        width: 75px;
+        width: 100px;
         position: fixed;
         top: 0;
         right: 0;
-        margin-top: 50px;
+        /*margin-top: 50px;*/
         margin-bottom: 50px;
         transition: 0.5s;
         background: rgba(0, 0, 0, 0.5);
-    }*/
+    }
 
-    .bottombar {
+    #bottombar {
         width: 100%;
         height:100px;
         position: inherit;
@@ -66,6 +66,7 @@ html, body {
         right: 0;
         left:0;
         overflow-x: hidden;
+        overflow-y: hidden;
         /*margin-left: 50px;*/
         /*margin-right: 50px;*/
         transition: 0.5s;
@@ -73,32 +74,80 @@ html, body {
     }
 
     #content{
-        position: fixed;
+        /*position: fixed;*/
         /*margin-left: 50px;*/
         /* background-color: white; */
         height: 100%;
         width: 100%;
         /* margin-top: 50px; */
-        padding: 10px 10px 210px 10px;
+        padding: 10px 10px 188px 10px;
         transition: 0.5s;
     }
 
     #menubar{
+        float:left;
         /*font-size: x-large;*/
         font-size: -webkit-xxx-large;
-        /* width: 72px; */
+         width: 90%;
         left: 0;
         color: white;
         /*position: fixed;*/
-        padding: 6px 0px 0px 12px;
+        /*padding: 6px 0px 15px 12px;*/
+        padding: 6px 0px 8px 100px;
+    }
+
+    #sidetoggle{
+        text-align: center;
+        float: right;
+        font-size: -webkit-xxx-large;
+        width: 10%;
+        left: 0;
+        color: white;
+        padding: 6px 6px 22px 6px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #contractbtn{
+        font-size: -webkit-xxx-large;
+    }
+
+    div#contract span{
+        padding: 45px 20px 15px 25px
+    }
+
+    #rightpnlbtn{
+        font-size: -webkit-xxx-large;
+    }
+
+    #rightclosebtn{
+        font-size: -webkit-xxx-large;
+    }
+
+    body.rightpanel #content {
+        padding: 10px 110px 10px 10px;
+    }
+
+    body.rightpanel #rightbar{
+        width: 100px;
+    }
+
+    body.rightpanel #contract{
+        padding: 10px 68px 10px 10px;
+    }
+    body.fullscreen #contract{
+        padding: 10px 20px 10px 10px;
+    }
+
+    body.rightpanel #contract {
+        padding: 10px 120px 10px 10px;
     }
 }
 
 /* Landscape */
 @media screen and (orientation:landscape) {
     /* Landscape styles here */
-    .topbar {
-        height: 50px;
+    #topbar {
+        height: 35px;
         /*margin: 0 -9999rem;*/
         /* add back negative margin value */
         /*padding: 0.25rem 9999rem;*/
@@ -106,7 +155,8 @@ html, body {
         transition: 0.5s;
     }
 
-/*    .leftbar {
+    /*
+    .leftbar {
         height: 100%;
         /!* position: fixed; *!/
         /!* z-index: 1; *!/
@@ -118,22 +168,24 @@ html, body {
         transition: 0.5s;
         background: rgba(0, 0, 0, 0.5);
     }
+    */
 
-    .rightbar {
+    #rightbar {
         height: 100%;
+        width: 50px;
         position: fixed;
-        /!* z-index: 1; *!/
+        /* z-index: 1; */
         top: 0;
         right: 0;
-        /!* background-color: #111; *!/
-        /!* overflow-y: hidden; *!/
-        margin-top: 50px;
+        /* background-color: #111; */
+        /* overflow-y: hidden; */
+        /*margin-top: 50px;*/
         margin-bottom: 50px;
         transition: 0.5s;
         background: rgba(0, 0, 0, 0.5);
-    }*/
+    }
 
-    .bottombar {
+    #bottombar {
         width: 100%;
         height:50px;
         position: inherit;
@@ -143,6 +195,7 @@ html, body {
         right: 0;
         /* background-color: #111; */
         overflow-x: hidden;
+        overflow-y: hidden;
         /*margin-left: 50px;*/
         /*margin-right: 50px;*/
         transition: 0.5s;
@@ -150,38 +203,73 @@ html, body {
     }
 
     #content{
-        position: fixed;
+        /*position: fixed;*/
+        /*border-radius: 4px;*/
         /*margin-left: 50px;*/
         /* background-color: white; */
         height: 100%;
         width: 100%;
         /* margin-top: 50px; */
         transition: 0.5s;
-        padding: 10px 10px 110px 10px;
+        padding: 10px 10px 93px 10px;
     }
 
     #menubar{
+        float: left;
         font-size: x-large;
-        /*font-size: -webkit-xxx-large;*/
-        /* width: 72px; */
+        width: 95%;
         left: 0;
         color: white;
-        /*position: fixed;*/
-        padding: 6px 0px 0px 12px;
+        /*padding: 6px 0px 8px 12px;*/
+        padding: 6px 0px 8px 100px;
     }
+
+    #sidetoggle{
+        text-align: right;
+        float: right;
+        font-size: x-large;
+        /*width: 3%;*/
+        left: 0;
+        color: white;
+        padding: 6px 10px 8px 12px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #contractbtn{
+        font-size: x-large;
+    }
+
+    div#contract span{
+        padding: 10px 10px 6px 10px;
+    }
+
+    #rightpnlbtn{
+        font-size: x-large;
+    }
+
+    #rightclosebtn{
+        font-size: x-large;
+    }
+
+    body.fullscreen #contract{
+        padding: 10px 20px 10px 10px;
+    }
+    body.rightpanel #content{
+        padding: 10px 58px 10px 10px;
+    }
+    body.rightpanel #rightbar{
+        width: 50px;
+    }
+    body.rightpanel #contract{
+        padding: 10px 68px 10px 10px;
+    }
+   
 }
-
-
-    .leftbar, .rightbar {
-        display: none !important;
-    }
-
-
-
 
 
 #innerContent{
     background-color: white;
+    border-radius: 4px;
     height: 100%;
     width: 100%;
 }
@@ -190,7 +278,7 @@ html, body {
     padding: 0px 0px 0px 15px;
 }
 
-.bottombar{
+#bottombar{
     text-align: center;
     vertical-align: middle;
 }
@@ -198,4 +286,102 @@ html, body {
 #menubtn{
     color:white;
 }
+
+#sidebtn{
+    color:white;
+}
+
+#rightbar{
+    width: 0px;
+}
+
+body.fullscreen #content{
+    padding: 10px 10px 10px 10px;
+}
+
+body.fullscreen #topbar{
+    height: 0px;
+}
+
+body.fullscreen #bottombar{
+    height: 0px;
+}
+
+body.fullscreen #contract{
+    display: block;
+}
+
+body.fullscreen #rightpanel{
+    display: none;
+}
+
+#contractbtn{
+    color: white;
+}
+
+#contract{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 2px;
+    /*padding: 10px 20px 10px 10px;*/
+    /* right: 0; */
+    text-align: right;
+    transition: 0.5s;
+    /* margin-right: 43px; */
+}
+
+div#contract span{
+    border-radius: 4px 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#rightpanel{
+    text-align: right;
+    bottom: 0;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+
+div#rightpanel span{
+    padding: 10px 15px 6px 17px;
+}
+
+#rightpnlbtn{
+    color: white;
+}
+
+#rightclosebtn{
+    color: white;
+}
+
+
+body.rightpanel #topbar{
+    height: 0px;
+}
+
+body.rightpanel #bottombar{
+    height: 0px;
+}
+
+body.rightpanel #contract{
+    display: block;
+}
+
+body.rightpanel #rightpanel{
+    display: none;
+}
+
+body.rightpanel #rightclose{
+    display: block;
+}
+
+#rightclose{
+    display: none;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 5px 0px;
+}
+
 
