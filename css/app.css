@@ -1,5 +1,5 @@
 html {
-    background: url(../images/main-wall.jpg) no-repeat center center fixed;
+    /*background: url(../images/main-wall.jpg) no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -8,7 +8,8 @@ html {
 
 body{
     height:100%;
-    width:100%
+    width:100%;
+    background-color: cadetblue;
 }
 
 html, body {
@@ -31,7 +32,7 @@ html, body {
 @media screen and (orientation:portrait) {
     #topbar {
         height:78px;
-        background: rgba(0, 0, 0, 0.5);
+        /*background: rgba(0, 0, 0, 0.5);*/
         transition: 0.5s;
     }
 
@@ -93,7 +94,7 @@ html, body {
         color: white;
         /*position: fixed;*/
         /*padding: 6px 0px 15px 12px;*/
-        padding: 6px 0px 8px 100px;
+        padding: 0px 0px 1px 100px;
     }
 
     #sidetoggle{
@@ -112,7 +113,8 @@ html, body {
     }
 
     div#contract span{
-        padding: 45px 20px 15px 25px
+        /*padding: 45px 20px 15px 25px*/
+        padding: 70px 14px 12px 18px;
     }
 
     #rightpnlbtn{
@@ -131,15 +133,51 @@ html, body {
         width: 100px;
     }
 
-    body.rightpanel #contract{
-        padding: 10px 68px 10px 10px;
-    }
     body.fullscreen #contract{
-        padding: 10px 20px 10px 10px;
+        /*padding: 10px 20px 10px 10px;*/
+        padding: 10px;
     }
 
     body.rightpanel #contract {
-        padding: 10px 120px 10px 10px;
+        padding: 10px 110px 10px 10px;
+    }
+
+    div#rightpanel span{
+        padding: 37px 20px 17px 22px;
+    }
+
+    #fulscrico{
+        font-size: 70px;
+        padding-top: 10px;
+    }
+    #fulscrexico{
+        font-size: 70px;
+    }
+    
+    #menuico{
+        font-size: 70px;
+        padding-top: 14px;
+    }
+
+    #homeico{
+        font-size: 70px;
+        padding-top: 14px;
+    }
+    #rightMenuIco{
+        font-size: 80px;
+    }
+
+    #menubar.home #homeico {
+        font-size: 70px;
+    }
+    #menubar.menu #menuico {
+        font-size: 70px;
+    }
+    #menubar.menu #appsbtn{
+        display:none;
+    }
+    ul#rightMenuIco > li > span > a > i{
+        font-size:  90px;
     }
 }
 
@@ -147,11 +185,11 @@ html, body {
 @media screen and (orientation:landscape) {
     /* Landscape styles here */
     #topbar {
-        height: 35px;
+        height: 37px;
         /*margin: 0 -9999rem;*/
         /* add back negative margin value */
         /*padding: 0.25rem 9999rem;*/
-        background: rgba(0, 0, 0, 0.5);
+        /*background: rgba(0, 0, 0, 0.5);*/
         transition: 0.5s;
     }
 
@@ -216,12 +254,12 @@ html, body {
 
     #menubar{
         float: left;
-        font-size: x-large;
+        font-size: 0px;
         width: 95%;
         left: 0;
         color: white;
         /*padding: 6px 0px 8px 12px;*/
-        padding: 6px 0px 8px 100px;
+        padding: 0px 0px 2px 100px;
     }
 
     #sidetoggle{
@@ -231,16 +269,17 @@ html, body {
         /*width: 3%;*/
         left: 0;
         color: white;
-        padding: 6px 10px 8px 12px;
+        padding: 5px 8px 2px 9px;
         background: rgba(0, 0, 0, 0.5);
     }
 
     #contractbtn{
-        font-size: x-large;
+        /*font-size: x-large;*/
     }
 
     div#contract span{
-        padding: 10px 10px 6px 10px;
+        /*padding: 10px 10px 6px 10px;*/
+        padding: 14px 6px 2px 7px;
     }
 
     #rightpnlbtn{
@@ -252,7 +291,8 @@ html, body {
     }
 
     body.fullscreen #contract{
-        padding: 10px 20px 10px 10px;
+        /*padding: 10px 20px 10px 10px;*/
+        padding: 5px 10px 10px 5px;
     }
     body.rightpanel #content{
         padding: 10px 58px 10px 10px;
@@ -261,15 +301,47 @@ html, body {
         width: 50px;
     }
     body.rightpanel #contract{
-        padding: 10px 68px 10px 10px;
+        /*padding: 10px 68px 10px 10px;*/
+        padding: 8px 58px 10px 0px;
     }
-   
+
+    div#rightpanel span{
+        /*padding: 10px 12px 5px 17px;*/
+        padding: 10px 12px 9px 15px;
+    }
+
+   #fulscrico{
+       font-size: 30px;
+       padding-top: 5px;
+   }
+    #menuico{
+        font-size: 35px;
+        padding-top: 8px;
+    }
+
+    #homeico{
+        font-size: 35px;
+        padding-top: 8px;
+    }
+
+    #rightMenuIco{
+        font-size: 40px;
+    }
+    #menubar.home #homeico {
+        font-size: 35px;
+    }
+    #menubar.menu #menuico {
+        font-size: 35px;
+    }
+    ul#rightMenuIco > li > span > a > i{
+        font-size:  45px;
+    }
 }
 
 
 #innerContent{
     background-color: white;
-    border-radius: 4px;
+    border-radius: 2px;
     height: 100%;
     width: 100%;
 }
@@ -308,11 +380,16 @@ body.fullscreen #bottombar{
 }
 
 body.fullscreen #contract{
-    display: block;
+    /*display: block;*/
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
 }
 
 body.fullscreen #rightpanel{
-    display: none;
+    /*display: none;*/
+    visibility: hidden;
+    opacity: 0;
 }
 
 #contractbtn{
@@ -320,20 +397,23 @@ body.fullscreen #rightpanel{
 }
 
 #contract{
-    display: none;
+    /*display: none;*/
+    visibility: hidden;
+    opacity: 0;
+    /*transition: visibility 0s 0.2s, opacity 0.2s linear;*/
     position: absolute;
     bottom: 0;
-    width: 100%;
-    margin-bottom: 2px;
+    /*width: 100%;*/
+    /*margin-bottom: 2px;*/
     /*padding: 10px 20px 10px 10px;*/
-    /* right: 0; */
-    text-align: right;
-    transition: 0.5s;
+     right: 0;
+    /*text-align: right;*/
+    /*transition: 0.5s;*/
     /* margin-right: 43px; */
 }
 
 div#contract span{
-    border-radius: 4px 0px;
+    border-radius: 2px 0px;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -342,10 +422,10 @@ div#contract span{
     bottom: 0;
     margin-bottom: 0px;
     padding-bottom: 5px;
-}
-
-div#rightpanel span{
-    padding: 10px 15px 6px 17px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 #rightpnlbtn{
@@ -354,6 +434,10 @@ div#rightpanel span{
 
 #rightclosebtn{
     color: white;
+}
+
+div#rightpanel span {
+    background: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -366,22 +450,92 @@ body.rightpanel #bottombar{
 }
 
 body.rightpanel #contract{
-    display: block;
+    /*display: block;*/
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
 }
 
 body.rightpanel #rightpanel{
-    display: none;
+    /*display: none;*/
+    visibility: hidden;
+    opacity: 0;
 }
 
 body.rightpanel #rightclose{
-    display: block;
+    /*display: block;*/
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
 }
 
 #rightclose{
-    display: none;
+    /*display: none;*/
+    visibility: hidden;
+    opacity: 0;
     text-align: center;
-    padding: 5px 0px;
-    margin: 5px 0px;
+    padding: 2px 0px 8px 2px;
+    background: rgba(0, 0, 0, 0.5);
+    /*padding: 5px 0px;*/
+    /*margin: 5px 0px;*/
 }
 
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    /*transition: visibility 0s 2s, opacity 2s linear;*/
+}
 
+#rightMenuIco{
+    /*vertical-align: middle;*/
+    /*font-size: 80px;*/
+    list-style-type: none;
+    /* bottom: 0; */
+    margin-left: -8px;
+    /* left: 0; */
+    /* text-align: left; */
+    /* margin-left: 0px; */
+    /* position: fixed; */
+    padding: 10px 10px 0px 12px;
+}
+
+#rightMenu{
+    height: 100%;
+}
+
+#menubar.home #homeico{
+    visibility: hidden;
+    opacity: 0;
+    font-size: 0px;
+}
+
+#menubar.menu #homeico{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+#menubar.home #menuico{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+#menubar.menu #menuico{
+    visibility: hidden;
+    opacity: 0;
+    font-size: 0px;
+}
+
+div#menubar> div > span >a > i{
+    color: white;
+}
+
+ul#rightMenuIco > li > span > a > i{
+    color: white;
+}

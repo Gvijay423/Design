@@ -2,9 +2,17 @@
  * Created by BKottedi on 11/22/2016.
  */
 $(document).ready(function(){
-    $('#menubtn').click(function(){
+    $('#menuico').click(function(){
         $('#innerContent').fadeToggle();
         $('#sidetoggle').fadeToggle();
+        $('#menubar').toggleClass('menu');
+        $('#menubar').toggleClass('home');
+    });
+    $('#homeico').click(function(){
+        $('#innerContent').fadeToggle();
+        $('#sidetoggle').fadeToggle();
+        $('#menubar').toggleClass('home');
+        $('#menubar').toggleClass('menu');
     });
 
     $('#sidebtn').click(function(){
@@ -24,10 +32,12 @@ $(document).ready(function(){
 
     $('#rightpnlbtn').click(function(){
         $('body').toggleClass('rightpanel');
+        $('#contract').toggle();
     });
 
     $('#rightclosebtn').click(function(){
         $('body').toggleClass('rightpanel');
+        $('#contract').toggle();
     });
 
 });
