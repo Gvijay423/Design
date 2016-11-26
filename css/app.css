@@ -31,7 +31,7 @@ html, body {
 
 @media screen and (orientation:portrait) {
     #topbar {
-        height:78px;
+        height:65px;
         /*background: rgba(0, 0, 0, 0.5);*/
         transition: 0.5s;
     }
@@ -60,7 +60,7 @@ html, body {
 
     #bottombar {
         width: 100%;
-        height:100px;
+        height:80px;
         position: inherit;
         z-index: 1;
         bottom: 0;
@@ -81,7 +81,7 @@ html, body {
         height: 100%;
         width: 100%;
         /* margin-top: 50px; */
-        padding: 10px 10px 188px 10px;
+        padding: 10px 10px 155px 10px;
         transition: 0.5s;
     }
 
@@ -89,53 +89,53 @@ html, body {
         float:left;
         /*font-size: x-large;*/
         font-size: -webkit-xxx-large;
-         width: 90%;
+         width: 75%;
         left: 0;
         color: white;
         /*position: fixed;*/
         /*padding: 6px 0px 15px 12px;*/
-        padding: 0px 0px 1px 100px;
+        padding: 0px 0px 0px 100px;
     }
 
     #sidetoggle{
-        text-align: center;
+        text-align: right;
         float: right;
         font-size: -webkit-xxx-large;
-        width: 10%;
+        width: 25%;
         left: 0;
         color: white;
-        padding: 6px 6px 22px 6px;
-        background: rgba(0, 0, 0, 0.5);
+        /*padding: 6px 6px 22px 6px;*/
+        /*background: rgba(0, 0, 0, 0.5);*/
     }
 
     #contractbtn{
-        font-size: -webkit-xxx-large;
+        /*font-size: -webkit-xxx-large;*/
     }
 
     div#contract span{
         /*padding: 45px 20px 15px 25px*/
-        padding: 70px 14px 12px 18px;
+        padding: 40px 8px 2px 8px
     }
 
     #rightpnlbtn{
-        font-size: -webkit-xxx-large;
+        font-size: 40px;
     }
 
     #rightclosebtn{
-        font-size: -webkit-xxx-large;
+        font-size: 40px;
     }
 
     body.rightpanel #content {
-        padding: 10px 110px 10px 10px;
+        padding: 0px 70px 0px 0px;
     }
 
     body.rightpanel #rightbar{
-        width: 100px;
+        width: 70px;
     }
 
     body.fullscreen #contract{
         /*padding: 10px 20px 10px 10px;*/
-        padding: 10px;
+        padding: 10px 10px 9px 10px;
     }
 
     body.rightpanel #contract {
@@ -143,28 +143,28 @@ html, body {
     }
 
     div#rightpanel span{
-        padding: 37px 20px 17px 22px;
+        padding: 37px 20px 15px 22px;
     }
 
     #fulscrico{
-        font-size: 70px;
-        padding-top: 10px;
+        font-size: 55px;
+        padding-top: 12px;
     }
     #fulscrexico{
-        font-size: 70px;
+        font-size: 50px;
     }
     
     #menuico{
-        font-size: 70px;
-        padding-top: 14px;
+        font-size: 60px;
+        padding: 10px 20px;
     }
 
     #homeico{
-        font-size: 70px;
-        padding-top: 14px;
+        font-size: 60px;
+        padding: 10px 20px;
     }
     #rightMenuIco{
-        font-size: 80px;
+        font-size: 40px;
     }
 
     #menubar.home #homeico {
@@ -177,7 +177,10 @@ html, body {
         display:none;
     }
     ul#rightMenuIco > li > span > a > i{
-        font-size:  90px;
+        font-size:  55px;
+    }
+    #rightMenu{
+        padding-left: 8px;
     }
 }
 
@@ -210,7 +213,7 @@ html, body {
 
     #rightbar {
         height: 100%;
-        width: 50px;
+        /*width: 50px;*/
         position: fixed;
         /* z-index: 1; */
         top: 0;
@@ -255,7 +258,7 @@ html, body {
     #menubar{
         float: left;
         font-size: 0px;
-        width: 95%;
+        width: 92%;
         left: 0;
         color: white;
         /*padding: 6px 0px 8px 12px;*/
@@ -266,11 +269,11 @@ html, body {
         text-align: right;
         float: right;
         font-size: x-large;
-        /*width: 3%;*/
+        width: 8%;
         left: 0;
         color: white;
-        padding: 5px 8px 2px 9px;
-        background: rgba(0, 0, 0, 0.5);
+        /*padding: 5px 8px 2px 9px;*/
+        /*background: rgba(0, 0, 0, 0.5);*/
     }
 
     #contractbtn{
@@ -312,7 +315,7 @@ html, body {
 
    #fulscrico{
        font-size: 30px;
-       padding-top: 5px;
+       padding-top: 10px;
    }
     #menuico{
         font-size: 35px;
@@ -336,6 +339,9 @@ html, body {
     ul#rightMenuIco > li > span > a > i{
         font-size:  45px;
     }
+    #rightMenu{
+        padding-left: 3px;
+    }
 }
 
 
@@ -344,6 +350,7 @@ html, body {
     border-radius: 2px;
     height: 100%;
     width: 100%;
+    overflow-y: scroll;
 }
 
 .menuitems{
@@ -496,12 +503,12 @@ body.rightpanel #rightclose{
     /*font-size: 80px;*/
     list-style-type: none;
     /* bottom: 0; */
-    margin-left: -8px;
+    /*margin-left: -8px;*/
     /* left: 0; */
     /* text-align: left; */
     /* margin-left: 0px; */
     /* position: fixed; */
-    padding: 10px 10px 0px 12px;
+    /*padding: 10px 10px 0px 12px;*/
 }
 
 #rightMenu{
@@ -538,4 +545,17 @@ div#menubar> div > span >a > i{
 
 ul#rightMenuIco > li > span > a > i{
     color: white;
+}
+
+div#sidetoggle span{
+    padding: 14px 10px 5px 12px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#rightMenuIco{
+     padding: 0px;
+}
+
+#rightMenu{
+    padding-top: 10px;
 }
